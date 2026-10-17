@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="POBO — 嗨，我是 POBO">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#111a33"/></linearGradient>
+  <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/>
+  </linearGradient>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1c2647" stroke-width="1"/></pattern>
+  <radialGradient id="fade" cx=".3" cy=".5" r=".8"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <mask id="gm"><rect width="1200" height="340" fill="url(#fade)"/></mask>
+  <clipPath id="frame"><rect width="1200" height="340" rx="24"/></clipPath>
+  <clipPath id="type"><rect class="typing" x="298" y="70" width="0" height="34"/></clipPath>
+</defs>
+<style>
+  .orb{animation:drift 14s ease-in-out infinite alternate}
+  .o2{animation-duration:18s;animation-delay:-6s}
+  .o3{animation-duration:22s;animation-delay:-11s}
+  @keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(60px,-30px)}100%{transform:translate(-40px,25px)}}
+  .typing{animation:type 7s steps(6,end) infinite}
+  @keyframes type{0%{width:0}35%,85%{width:76px}100%{width:0}}
+  .cursor{animation:cur 7s steps(6,end) infinite,blink 1s step-end infinite}
+  @keyframes cur{0%{transform:translateX(0)}35%,85%{transform:translateX(76px)}100%{transform:translateX(0)}}
+  @keyframes blink{50%{opacity:0}}
+  .rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .d1{animation-delay:.15s} .d2{animation-delay:.35s} .d3{animation-delay:.55s}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .spin{transform-origin:1010px 170px;animation:spin 40s linear infinite}
+  .spin2{transform-origin:1010px 170px;animation:spin 26s linear infinite reverse}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .pulse{transform-origin:1010px 170px;animation:pulse 3.2s ease-in-out infinite}
+  @keyframes pulse{50%{transform:scale(1.08)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}.rise{opacity:1}.typing{width:76px}}
+</style>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <g filter="url(#blur)" opacity=".55">
+    <circle class="orb" cx="260" cy="60" r="150" fill="#7c5cff"/>
+    <circle class="orb o2" cx="1050" cy="300" r="170" fill="#22d3ee"/>
+    <circle class="orb o3" cx="700" cy="-20" r="120" fill="#f472b6"/>
+  </g>
+  <rect width="1200" height="340" fill="url(#grid)" mask="url(#gm)" opacity=".8"/>
+
+  <!-- prompt line -->
+  <g font-family="ui-monospace,'SFMono-Regular','JetBrains Mono',Menlo,Consolas,monospace" font-size="20">
+    <text x="96" y="94" fill="#22d3ee">~/tengyao-pobo</text>
+    <text x="276" y="94" fill="#7c5cff">$</text>
+    <g clip-path="url(#type)"><text x="300" y="94" fill="#e8ecf8">whoami</text></g>
+    <rect class="cursor" x="302" y="76" width="11" height="22" fill="#22d3ee"/>
+  </g>
+
+  <g class="rise d1"><text x="90" y="200" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',system-ui,sans-serif" font-size="104" font-weight="800" letter-spacing="-3" fill="url(#word)">POBO</text></g>
+  <g class="rise d2"><text x="96" y="248" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',system-ui,sans-serif" font-size="28" font-weight="600" fill="#e8ecf8">嗨，我是 POBO <tspan font-weight="400" fill="#8a94b8">— 用程式把想法變成作品</tspan></text></g>
+  <g class="rise d3" font-family="ui-monospace,'SFMono-Regular','JetBrains Mono',Menlo,Consolas,monospace" font-size="15" fill="#8a94b8">
+    <rect x="96" y="272" width="132" height="30" rx="15" fill="none" stroke="#26325a"/><text x="162" y="292" text-anchor="middle">Building</text>
+    <rect x="240" y="272" width="132" height="30" rx="15" fill="none" stroke="#26325a"/><text x="306" y="292" text-anchor="middle">Learning</text>
+    <rect x="384" y="272" width="132" height="30" rx="15" fill="none" stroke="#26325a"/><text x="450" y="292" text-anchor="middle">Sharing</text>
+  </g>
+
+  <!-- orbit emblem -->
+  <g opacity=".95">
+    <circle cx="1010" cy="170" r="118" fill="none" stroke="#26325a" stroke-dasharray="2 8" stroke-linecap="round" stroke-width="2"/>
+    <g class="spin"><circle cx="1010" cy="170" r="118" fill="none" stroke="url(#word)" stroke-width="2.5" stroke-dasharray="120 622" stroke-linecap="round"/><circle cx="1128" cy="170" r="6" fill="#22d3ee"/></g>
+    <circle cx="1010" cy="170" r="78" fill="none" stroke="#26325a" stroke-width="1.5"/>
+    <g class="spin2"><circle cx="1010" cy="92" r="5" fill="#f472b6"/><circle cx="1010" cy="248" r="3.5" fill="#7c5cff"/></g>
+    <g class="pulse">
+      <circle cx="1010" cy="170" r="46" fill="#0f172e" stroke="url(#word)" stroke-width="2.5"/>
+      <text x="1010" y="183" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular','JetBrains Mono',Menlo,Consolas,monospace" font-size="34" font-weight="700" fill="url(#word)">&lt;/&gt;</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="339" rx="24" fill="none" stroke="#26325a"/>
+</g>
+</svg>

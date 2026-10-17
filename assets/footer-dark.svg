@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="感謝來訪">
+<defs><linearGradient id="w" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+<style>
+  .wave{animation:flow 10s linear infinite} .w2{animation-duration:16s;opacity:.45}
+  @keyframes flow{to{transform:translateX(-600px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g class="wave"><path d="M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 T1500 70 T1800 70" fill="none" stroke="url(#w)" stroke-width="2.5"/></g>
+<g class="wave w2"><path d="M0 80 Q150 115 300 80 T600 80 T900 80 T1200 80 T1500 80 T1800 80" fill="none" stroke="url(#w)" stroke-width="2"/></g>
+<text x="600" y="30" text-anchor="middle" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',system-ui,sans-serif" font-size="18" fill="#8a94b8">感謝你的來訪 · Thanks for stopping by</text>
+</svg>
