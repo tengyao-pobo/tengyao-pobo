@@ -6,9 +6,9 @@
 </picture>
 
 <p align="center">
-  <a href="https://github.com/tengyao-pobo?tab=repositories"><img src="https://img.shields.io/badge/作品-Repositories-7c5cff?style=flat-square&logo=github&logoColor=white" alt="Repositories"></a>
-  <a href="https://github.com/tengyao-pobo?tab=followers"><img src="https://img.shields.io/github/followers/tengyao-pobo?label=追蹤者&style=flat-square&color=22d3ee&logo=github&logoColor=white" alt="Followers"></a>
-  <img src="https://komarev.com/ghpvc/?username=tengyao-pobo&label=訪客&color=f472b6&style=flat-square" alt="訪客人次">
+  <a href="https://github.com/tengyao-pobo?tab=repositories"><img src="https://img.shields.io/badge/%E4%BD%9C%E5%93%81-Repositories-7c5cff?style=flat-square&logo=github&logoColor=white" alt="Repositories"></a>
+  <a href="https://github.com/tengyao-pobo?tab=followers"><img src="https://img.shields.io/github/followers/tengyao-pobo?label=%E8%BF%BD%E8%B9%A4%E8%80%85&style=flat-square&color=22d3ee&logo=github&logoColor=white" alt="Followers"></a>
+  <img src="https://komarev.com/ghpvc/?username=tengyao-pobo&label=%E8%A8%AA%E5%AE%A2&color=f472b6&style=flat-square" alt="訪客人次">
 </p>
 
 ## 👋 關於我

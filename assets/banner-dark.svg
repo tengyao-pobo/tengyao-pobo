@@ -9,17 +9,15 @@
   <radialGradient id="fade" cx=".3" cy=".5" r=".8"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
   <mask id="gm"><rect width="1200" height="340" fill="url(#fade)"/></mask>
   <clipPath id="frame"><rect width="1200" height="340" rx="24"/></clipPath>
-  <clipPath id="type"><rect class="typing" x="298" y="70" width="0" height="34"/></clipPath>
-</defs>
+  </defs>
 <style>
   .orb{animation:drift 14s ease-in-out infinite alternate}
   .o2{animation-duration:18s;animation-delay:-6s}
   .o3{animation-duration:22s;animation-delay:-11s}
   @keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(60px,-30px)}100%{transform:translate(-40px,25px)}}
-  .typing{animation:type 7s steps(6,end) infinite}
-  @keyframes type{0%{width:0}35%,85%{width:76px}100%{width:0}}
-  .cursor{animation:cur 7s steps(6,end) infinite,blink 1s step-end infinite}
-  @keyframes cur{0%{transform:translateX(0)}35%,85%{transform:translateX(76px)}100%{transform:translateX(0)}}
+  .cmd{animation:cmd 7s ease-in-out infinite}
+  @keyframes cmd{0%,8%{opacity:0}20%,88%{opacity:1}100%{opacity:0}}
+  .cursor{animation:blink 1s step-end infinite}
   @keyframes blink{50%{opacity:0}}
   .rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
   .d1{animation-delay:.15s} .d2{animation-delay:.35s} .d3{animation-delay:.55s}
@@ -29,7 +27,7 @@
   @keyframes spin{to{transform:rotate(360deg)}}
   .pulse{transform-origin:1010px 170px;animation:pulse 3.2s ease-in-out infinite}
   @keyframes pulse{50%{transform:scale(1.08)}}
-  @media (prefers-reduced-motion:reduce){*{animation:none!important}.rise{opacity:1}.typing{width:76px}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}.rise{opacity:1}.cmd{opacity:1}}
 </style>
 <g clip-path="url(#frame)">
   <rect width="1200" height="340" fill="url(#bg)"/>
@@ -42,10 +40,8 @@
 
   <!-- prompt line -->
   <g font-family="ui-monospace,'SFMono-Regular','JetBrains Mono',Menlo,Consolas,monospace" font-size="20">
-    <text x="96" y="94" fill="#22d3ee">~/tengyao-pobo</text>
-    <text x="276" y="94" fill="#7c5cff">$</text>
-    <g clip-path="url(#type)"><text x="300" y="94" fill="#e8ecf8">whoami</text></g>
-    <rect class="cursor" x="302" y="76" width="11" height="22" fill="#22d3ee"/>
+    <text x="96" y="94" textLength="276" lengthAdjust="spacingAndGlyphs" fill="#22d3ee">~/tengyao-pobo <tspan fill="#7c5cff">$</tspan> <tspan class="cmd" fill="#e8ecf8">whoami</tspan></text>
+    <rect class="cursor" x="380" y="76" width="11" height="22" fill="#22d3ee"/>
   </g>
 
   <g class="rise d1"><text x="90" y="200" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei','Segoe UI',system-ui,sans-serif" font-size="104" font-weight="800" letter-spacing="-3" fill="url(#word)">POBO</text></g>
