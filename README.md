@@ -2,7 +2,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="POBO — 嗨，我是 POBO，用程式把想法變成作品" src="./assets/banner-dark.svg" width="100%">
+  <img alt="POBO — 嗨，我是 POBO，與 AI 協作的創作者" src="./assets/banner-dark.svg" width="100%">
 </picture>
 
 <p align="center">
@@ -13,30 +13,12 @@
 
 ## 👋 關於我
 
-```yaml
-name:      POBO
-handle:    "@tengyao-pobo"
-languages: [繁體中文, English]
-mindset:   "先做出來，再把它做好"
-currently:
-  - 🔭 動手做一些有趣的小專案
-  - 🌱 持續學習新的語言與工具
-  - 💬 歡迎找我聊程式、設計與點子
+我是 POBO，習慣**和 AI 協作**來做東西。
+我負責提出想法、決定方向、把關品質；AI 是我的搭檔，一起把想法實作出來。
+
+```text
+💡 想法  ──▶  🤖 與 AI 協作實作  ──▶  🔍 審視與調整  ──▶  🚀 發布
 ```
-
-## 🧰 技術工具
-
-<p>
-  <img src="https://skillicons.dev/icons?i=py,js,ts,html,css,react,nodejs,git,github,vscode,linux,docker&perline=12" alt="技術工具">
-</p>
-
-## 🗺️ 現在進行中
-
-| 狀態 | 項目 |
-| :--: | :--- |
-| 🚧 | 建立第一個公開專案 |
-| 📚 | 把學到的東西整理成筆記 |
-| 🎯 | 每週至少一次 commit，讓下面的格子長滿 |
 
 ## 🐍 貢獻足跡
 
