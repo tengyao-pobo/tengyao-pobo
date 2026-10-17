@@ -1,14 +1,14 @@
 <!-- 橫幅：會依 GitHub 的深色／淺色主題自動切換 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="POBO — 嗨，我是 POBO，與 AI 協作的創作者" src="./assets/banner-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg?v=2">
+  <img alt="POBO — 嗨，我是 POBO，與 AI 協作的創作者" src="./assets/banner-dark.svg?v=2" width="100%">
 </picture>
 
 <p align="center">
   <a href="https://github.com/tengyao-pobo?tab=repositories"><img src="https://img.shields.io/badge/%E4%BD%9C%E5%93%81-Repositories-7c5cff?style=flat-square&logo=github&logoColor=white" alt="Repositories"></a>
-  <a href="https://github.com/tengyao-pobo?tab=followers"><img src="https://img.shields.io/github/followers/tengyao-pobo?label=%E8%BF%BD%E8%B9%A4%E8%80%85&style=flat-square&color=22d3ee&logo=github&logoColor=white" alt="Followers"></a>
-  <img src="https://komarev.com/ghpvc/?username=tengyao-pobo&label=%E8%A8%AA%E5%AE%A2&color=f472b6&style=flat-square" alt="訪客人次">
+  <a href="https://github.com/tengyao-pobo?tab=followers"><img src="https://img.shields.io/badge/%E8%BF%BD%E8%B9%A4%E6%88%91-Follow-22d3ee?style=flat-square&logo=github&logoColor=white" alt="追蹤我"></a>
+  <img src="https://img.shields.io/badge/Human_%C3%97_AI-%E5%8D%94%E4%BD%9C%E4%B8%AD-f472b6?style=flat-square" alt="Human × AI 協作中">
 </p>
 
 ## 👋 關於我
@@ -29,7 +29,7 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg">
-  <img alt="感謝你的來訪" src="./assets/footer-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg?v=2">
+  <img alt="感謝你的來訪" src="./assets/footer-dark.svg?v=2" width="100%">
 </picture>
